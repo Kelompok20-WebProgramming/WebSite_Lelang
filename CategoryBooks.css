@@ -1,0 +1,100 @@
+nav {
+    background-color: black;
+  }
+a{
+    color: black;
+  }
+
+body{
+    background-color: whitesmoke;
+}
+.navbar-nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: bold;
+  font-size: 20px;
+}
+.navbar-brand{
+  font-family: impact, fantasy ;
+  font-style: bold;
+  font-size: 50px;
+
+}
+.navbar-link{
+  margin-left: 20px;
+  font-family: fantasy;
+  font-style: bold;
+  font-size: 30px;
+  color: black;
+}
+
+header {
+  font-family: impact, fantasy;
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+@media screen and (max-height: 450px){
+    .sidenav{padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*------- Featured Book List ------*/
+
+.title-box{
+    margin: auto;
+    background-color: lightgray;
+    color: black;
+    width: 280px;
+    padding: 4px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: impact, fantasy;
+}
+
+.product-bottom{
+    align-items: center;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.product-top img{
+    width: 90%;
+}
