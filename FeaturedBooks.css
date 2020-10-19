@@ -1,0 +1,69 @@
+nav {
+    background-color: black;
+  }
+a{
+    color: black;
+  }
+
+body{
+    background-color: whitesmoke;
+}
+.navbar-nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: bold;
+  font-size: 20px;
+}
+.navbar-brand{
+  font-family: impact, fantasy ;
+  font-style: bold;
+  font-size: 50px;
+
+}
+.navbar-link{
+  margin-left: 20px;
+  font-family: fantasy;
+  font-style: bold;
+  font-size: 30px;
+  color: black;
+}
+
+header {
+  font-family: impact, fantasy;
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+}nav {
+    background-color: black;
+  }
+a{
+    color: black;
+  }
+
+body{
+    background-color: whitesmoke;
+}
+.navbar-nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: bold;
+  font-size: 20px;
+}
+.navbar-brand{
+  font-family: impact, fantasy ;
+  font-style: bold;
+  font-size: 50px;
+
+}
+.navbar-link{
+  margin-left: 20px;
+  font-family: fantasy;
+  font-style: bold;
+  font-size: 30px;
+  color: black;
+}
+
+header {
+  font-family: impact, fantasy;
+  font-style: bold;
+  font-size: 25px;
+  color: black;
+}
