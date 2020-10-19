@@ -152,21 +152,33 @@ a {
     color: black;
     width: 300px;
     padding: 4px 8px;
-    margin-top: 40x;
+    margin-top: 60x;
     margin-bottom: 40px;
     text-align: center;
-    font-family: fantasy;
-    font-size: 20px;
+}
+
+.title-box h2{
+   font-size: 190%;
+   font-family: fantasy;
+   font-weight: bolder;
 }
 
 .product-bottom{
     align-items: center;
+    margin-bottom: 25px;
 }
 
-h3{
-    font-size: 20px;
-    font-weight: bolder;
+.book-title{
+  align-items: center;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bolder;
 }
+
+.img{
+  align-items: center;
+}
+
 .product-top img{
     width: 90%;
 }
