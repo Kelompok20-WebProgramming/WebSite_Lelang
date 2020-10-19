@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catrgory Books</title>
+    <title>MY AUCTION - Catrgory Books</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
@@ -19,10 +19,9 @@
 
 
 </head>
-
     <body>  
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a1 class="navbar-brand" href="#">AUCTION HOUSE</a1>
+            <a1 class="navbar-brand" href="#">MY AUCTION</a1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,127 +67,260 @@
         </nav>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupported content">
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                 
-                </div>
-                
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; FILTER</span>
-            
-                <script>
-               function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                    document.getElementById("main").style.marginLeft = "250px";
-                }
-                
-                function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("main").style.marginLeft = "0";
-                } 
-                </script>
+            <div class="navbar navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-5">
+                    <li class="nav-item active">
+                        <a class="nav-link text-center">BOOKS FILTER</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           BOOK CATEGORY
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="CategoryBooks.html"class="dropdown-item" href="#">Books</a>
+                            <a class="dropdown-item" href="#">Action and Adventure</a>
+                            <a class="dropdown-item" href="#">Art/Architecture</a>
+                            <a class="dropdown-item" href="#">Biography</a>
+                            <a class="dropdown-item" href="#">Children's</a>
+                            <a class="dropdown-item" href="#">Comic Book</a>
+                            <a class="dropdown-item" href="#">Fairytale</a>
+                            <a class="dropdown-item" href="#">Fantasy</a>
+                            <a class="dropdown-item" href="#">Horror</a>
+                            <a class="dropdown-item" href="#">Mystery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               PRICE SETTING
+                         </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="card-body">
+                                    <input type="range" class="custom-range" min="0" max="100" name="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6"><label>Min</label><input class="form-control" placeholder="Rp.0" type="number"></div>
+                                        <div class="form-group text-right col-md-6"><label>Max</label><input class="form-control" placeholder="Rp.1.000.000.000" type="numvber"></div>
+                                    </div> <a href="#" class="highlight-button btn btn-medium button xs-margin-bottom-five" data-abc="true">Apply Now</a>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            RATINGS
+                        </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="card-body">
+                                <label class="custom-control"><input type="checkbox" checked="" class="custom-control-input">
+                                    <div class="custom-control-label">Better</div>
+                                </label>
+                                <label class="custom-control"><input type="checkbox" checked="" class="custom-control-input">
+                                    <div class="custom-control-label">Best</div>
+                                </label>
+                                <label class="custom-control"><input type="checkbox" checked="" class="custom-control-input">
+                                    <div class="custom-control-label">Good</div>
+                                </label>
+                                <label class="custom-control"><input type="checkbox" checked="" class="custom-control-input">
+                                    <div class="custom-control-label">Not Good</div>
+                                </label>
+                             </div>
+                           </div>
+                   </li>
+                </ul>
             </div>
         </nav>
 
-        <section class="Books">
-            <div class="container">
-                <div class="title-box">
-                    <h2>Featured Today</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="product-top">
-                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
-                                <div class="overlay-center">
-                                    <button type="button" class="btn  btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-eye"></i>
-                                    </button>
-                                    <button type="button" class="btn  btn-secondary" title="Add to Cart">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
+            <div class="col-xl">
+                <section class="Books">
+                    <div class="container">
+                            <div class="title-box">
+                                <h2>FEATURED TODAY</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
                                 </div>
-                        </div>
-                        <div class="product-bottom text-center">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                                <h3>Harry Potter and The Philospher Stone</h3>
-                                <h5>Starting Price : RP.250.000</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="product-top">
-                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
-                                <div class="overlay-center">
-                                    <button type="button" class="btn  btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-eye"></i>
-                                    </button>
-                                    <button type="button" class="btn  btn-secondary" title="Add to Cart">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
                                 </div>
-                        </div>
-                        <div class="product-bottom text-center">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                                <h3>Harry Potter and The Philospher Stone</h3>
-                                <h5>Starting Price : RP.250.000</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="product-top">
-                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
-                                <div class="overlay-center">
-                                    <button type="button" class="btn  btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-eye"></i>
-                                    </button>
-                                    <button type="button" class="btn  btn-secondary" title="Add to Cart">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
                                 </div>
-                        </div>
-                        <div class="product-bottom text-center">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                                <h3>Harry Potter and The Philospher Stone</h3>
-                                <h5>Starting Price : RP.250.000</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="product-top">
-                            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
-                                <div class="overlay-center">
-                                    <button type="button" class="btn  btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-eye"></i>
-                                    </button>
-                                    <button type="button" class="btn  btn-secondary" title="Add to Cart">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="container">
+                                <div class="title-box">
+                                    <h2>Featured Today</h2>
+                                </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-top">
+                                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6e5xkpYrv4-8d_2ysBEqQj9YZ16YmsmAS_7AjoMW3YBeWy48N">
+                                            <div class="overlay-center">
+                                                <button type="button" class="btn  btn-secondary" title="Quick Shop">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                                <button type="button" class="btn  btn-secondary" title="Add to Cart">
+                                                    <i class="fa fa-shopping-cart"></i>
+                                                </button>
+                                            </div>
+                                    </div>
+                                    <div class="product-bottom text-center">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                            <h3>Harry Potter and The Philospher Stone</h3>
+                                            <h5>Starting Price : RP.250.000</h5>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product-bottom text-center">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                                <h3>Harry Potter and The Philospher Stone</h3>
-                                <h5>Starting Price : RP.250.000</h5>
-                        </div>
-                    </div>
-                </div>
+                 </section>
             </div>
-        </section>
-        
-
         
         <script src="https://unpkg.com/feather-icons"></script>
         <script>
