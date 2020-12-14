@@ -4,6 +4,9 @@ Kelompok-20-Situs Lelang
 Sebagai Database yang digunakan adalah
 https://www.mongodb.com/
 
+Link Heroku
+https://auctionhouse-heroku.herokuapp.com/
+
 MOHON MAAF!
 karna terjadi kendala tidak dapat di deploy ke Heroku terjadi App Crash terus menerus...
 Routes yang menyambunkan beberapa page lain juga tidak berjalan...
