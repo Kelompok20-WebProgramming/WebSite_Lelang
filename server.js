@@ -7,6 +7,8 @@ const passport = require('passport');
 
 const app = express();
 
+const aboutrouter = require('./routes/about');
+
 // Passport config
 require('./config/passport')(passport);
 
@@ -18,8 +20,13 @@ mongoose.connect(db, {useNewUrlParser: true})
     .then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err));
 
-//EJS
+// Static Files
+app.use(express.static('public'));
+app.use('/css', express.static(__dirname + 'CSS/css'));
+
+// EJS
 app.use(expressLayouts);
+app.use('views', '/views')
 app.set('view engine', 'ejs');
 
 // Bodyparser
@@ -48,8 +55,9 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/', require('./routes/home'));
+app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
+app.use('/about', aboutrouter);
 
 const PORT = process.env.PORT || 5000;
 

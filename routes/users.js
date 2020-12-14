@@ -96,4 +96,7 @@ router.get('/logout', (req, res) => {
     res.redirect('/users/login');
 });
 
+// Dashboard(Home)
+router.get('/dashboard', (req, res) => res.render('Dashboard'));
+
 module.exports = router;

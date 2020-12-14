@@ -1,0 +1,30 @@
+Kelompok-20-Situs Lelang
+"The Auction House"
+
+Sebagai Database yang digunakan adalah
+https://www.mongodb.com/
+
+MOHON MAAF!
+karna terjadi kendala tidak dapat di deploy ke Heroku terjadi App Crash terus menerus...
+Routes yang menyambunkan beberapa page lain juga tidak berjalan...
+Untuk menjalankan web ini dapat dilakukan dengan mendownload semua file...
+
+Dependencies pada Web ini adalah berikut
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+    "nodemon": "^2.0.6"
+
+1. Cara run webnya adalah membuka terminal memasukkan "npm start"
+2. Membuka browser dan ketikkan "localhost:5000" (karna PORT yang diplih adalah 5000)
+
+Register & Login berjalan lancar dan membuka dashboard(sebagai Home...)
+
+Progress WEB akan terus berlanjut, walau penilaian sudah lewat...
