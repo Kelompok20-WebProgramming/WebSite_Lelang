@@ -59,10 +59,6 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/about', aboutrouter);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
-
-
-app.listen(process.env.PORT || 5000, function() {
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-}   
+app.listen(PORT, console.log(`Server Started on port ${PORT}`));    
